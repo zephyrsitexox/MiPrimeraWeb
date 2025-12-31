@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil Profesional</title>
+    
+    <style>
+        body {
+            background-color: #1a1a2e; /* Azul oscuro elegante */
+            color: white;
+            font-family: Arial, sans-serif;
+            
+            /* TRUCO DE MAGIA: FLEXBOX (Para centrar todo) */
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center;     /* Centrar verticalmente */
+            height: 100vh;           /* Altura del 100% de la pantalla */
+            margin: 0;
+        }
+
+        .tarjeta {
+            background-color: #16213e; /* Un tono más claro para la tarjeta */
+            border: 2px solid #0f3460; /* Borde sutil */
+            padding: 40px;             /* Relleno interno (aire) */
+            border-radius: 20px;       /* Bordes redondeados */
+            text-align: center;        /* Todo el texto centrado */
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.5); /* Sombra 3D */
+            width: 300px;              /* Ancho fijo */
+        }
+
+        button {
+            background-color: #e94560; /* Rojo/Rosado moderno */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer; /* Manito al pasar el mouse */
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ff2e63; /* Cambia de color al pasar el mouse */
+            transform: scale(1.05);    /* Crece un poquito */
+            transition: 0.3s;          /* Animación suave */
+        }
+    </style>
+
 </head>
 <body>
-	<h1 style="color: red">Prueba en Vivo</h1>
+
+    <div class="tarjeta">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Foto Perfil" width="100">
+        <h1>Daniel Posada</h1>
+        <h2>Futuro Ingeniero de Software</h2>
+        <p>Aprendiendo a construir el futuro, una línea de código a la vez.</p>
+        <button onclick="alert('¡Gracias por contactarme!')">Contactar</button>
+    </div>
+
 </body>
 </html>
